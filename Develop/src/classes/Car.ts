@@ -46,6 +46,18 @@ class Car extends Vehicle {
     }
   }
 
+  override getVin(): string {
+    return this.vin;
+  }
+
+  override getMake(): string {
+    return this.make;
+  }
+
+  override getModel(): string {
+    return this.model;
+  }
+
   // Override the printDetails method from the Vehicle class
   override printDetails(): void {
     // Call the printDetails method of the parent class, Vehicle
